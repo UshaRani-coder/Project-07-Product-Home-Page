@@ -1,0 +1,244 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "roboto",sans-serif;
+
+}
+body{
+    width:100%;
+    height:100vh;
+   /* margin-bottom: -500px;*/
+   overflow-x: hidden;
+}
+nav{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.nav-items{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 250px;
+
+}
+.active-item{
+    font-size: 25px;
+    font-weight: 900;
+    color: #FE5E35;
+}
+
+ .nav-item{
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: 100;
+    padding: 0 12px;
+    
+}
+/*.nav-item::after{
+    content: '';
+    width:0;
+    height:2px;
+    background-color: red;
+    display: block;
+    margin: auto;
+    
+}
+.nav-item:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}*/
+nav img{
+    margin-left: 40px;
+}
+.intro-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.left-section{
+    margin-left: 40px;
+}
+.left-section h3{
+    font-size: 40px;
+    margin-top: 40px;
+    font-weight: 300;
+    
+}
+.left-section h1{
+    font-weight: 900;
+    font-size:50px ;
+    
+}
+.sub-headlines{
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.sub-headline{
+    font-size: 20px;
+}
+.text{
+    margin-top: 30px;
+    font-weight: 100;
+    padding-right: 150px;
+    line-height: 35px;
+}
+.action-btn{
+    border-radius:20px;
+    color:#fff;
+    background-color: #FE5E35;
+    padding:10px 30px;
+    border-color: transparent;
+    margin-left: 10px;
+}
+.action-btns{
+    margin-top: 40px;
+
+}
+ .headphone{
+    margin-right: 80px;
+
+
+}
+.discount{
+    width:130px;
+    position:relative;
+    bottom:170px;
+    right:10px;
+}
+.discount-content{
+    position:relative;
+    bottom:265px;
+    left:12px;
+    color: #fff;
+    
+}
+ .yellow-dot{
+    background-color: yellow;
+    border-radius: 50%;
+    border-color: transparent;
+    width:30px;
+    height:30px; 
+    margin-left: 30px;   
+}
+.tomato-dot{
+    background-color: red;
+    border-radius: 50%;
+    border-color: transparent;
+    width:30px;
+    height:30px;
+    margin-left: 20px;
+}
+.black-dot{
+    background-color: black;
+    border-radius:50%;
+    border-color:transparent;
+    width:30px;
+    height:30px;
+    margin-left: 20px;
+}
+.dots{
+    position: relative;
+    bottom:190px;
+    left:150px;
+}
+.right-section .action-btn{
+    position: relative;
+    bottom:160px;
+    left:140px;
+    margin-left: 45px;
+}
+.menu-line{
+    width:20px;
+    height:3px;
+    background-color: #000;
+    margin-bottom: 4px;
+    display: none;
+    cursor: pointer;
+}
+/* Media Queries*/
+@media  screen and (max-width:450px){
+    body{
+        overflow-x: hidden;
+    }
+    nav .logo{
+        position: absolute;
+        top: 3rem;
+        left: 1rem;
+        
+    }
+    .nav-items{
+        display: block;
+        position: relative;
+        top: 5rem;
+    
+        text-align: center;
+    
+        
+    }
+    .nav-item{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .nav-item:hover{
+        background-color: aquamarine;
+        transition: 0.5s;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        transform: rotate(360deg);
+    }
+    .actions{
+        position: relative;
+        bottom: 30px;
+        right: 50px;
+        
+        
+    }
+    .left-section{
+    
+        position: absolute;
+        top: 16rem;
+        left: 5rem;
+    }
+    .left-section h3{
+        width: 500px;
+        font-size: 50px;
+    
+    }
+    .left-section h1{
+        font-size: 40px;
+        width: 450px;
+        color: #FE5E35;
+        margin-top: 20px;
+        
+        
+       
+    }
+    .sub-headline{
+        font-size: 25px;
+        margin-bottom:30px;
+    }
+    .text{
+        font-size: 30px;
+        display: inline;
+        font-weight: 100;
+        width: 450px;
+        line-height: 40px;
+
+    }
+    .action-btns{
+        margin-top: 35px;
+        margin-left: 60px;
+    }
+    .right-section{
+        position: absolute;
+        top:70rem ;
+        left: 6rem;
+    }
+    .dots{
+        display: none;
+    }
+}
