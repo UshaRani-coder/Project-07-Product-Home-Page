@@ -23,9 +23,19 @@
         <h5 class="nav-item">About</h5>
       </div>
       <img src="Assets/actions.svg" alt="actions" class="actions"/>
-    
-      
+      <div class="hamburger">
+        <img src="Assets/more.png" alt="" width="20px" onclick="menu()" class="more">
+        <img src="Assets/close.png" alt="" width="15px" class="close">
+      </div>
     </nav>
+    <!--dropdown for responsive navbar-->
+    <div class="dropdown">
+      <h5 class="dropdown-item active-item">Home</h5>
+        <h5 class="dropdown-item">Product</h5>
+        <h5 class="dropdown-item">Price</h5>
+        <h5 class="dropdown-item">About</h5>
+        <img src="Assets/actions.svg" alt="actions" id="actions"/>
+    </div>
     <div class="intro-section">
       <div class="left-section">
         <h3>
@@ -58,7 +68,7 @@
        <div class="right-section"> 
         <div class="headphone-div">
         <div class="headphone">
-          <img src="Assets/headphones.jpg" alt="headphone" width="500px" height="400px"/>
+          <img src="Assets/headphones.jpg" alt="headphone"  />
           </div>
         
           <img src="Assets/discount.svg" alt="discount" class="discount"  />
@@ -76,5 +86,6 @@
         <button class="button">Add to chart</button>
        </div> 
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
